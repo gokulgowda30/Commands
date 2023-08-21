@@ -1,0 +1,223 @@
+    Commands of Git
+
+281  pwd
+  282  git init
+  283  vi demo.txt
+  284  cat demo.txt
+  285  git add .
+  286  git commit -m "m1"
+  287  git remote add origin https://github.com/gokulgowda30/Sample1.git
+  288  git push origin master
+  289  echo "m2" >> demo.txt
+  290  cat demo.txt
+  291  git add .
+  292  git commit -m "m2"
+  293  git push origin master
+  294  echo "m3" >> demo.txt
+  295  cat demo.txt
+  296  git add .
+  297  git commit -m "m3"
+  298  git push origin master
+  299  echo "m4" >> demo.txt
+  300  cat demo.txt
+  301  git add .
+  302  git commit -m "m4"
+  303  git push origin master
+  304  ls
+  305  mkdir backup
+  306  ls
+  307  cd backup/
+  308  ls
+  309  pwd
+  310  git clone https://github.com/gokulgowda30/Sample1.git
+  311  ls
+  312  cd Sample1/
+  313  ls
+  314  cat demo.txt
+  315  cd ..
+  316  cd ..
+  317  ls
+  318  rm -rf backup/
+  319  ls
+  320  git branch
+  321  git branch dev1
+  322  git branch
+  323  git checkout dev1
+  324  echo "d1" >> demo.txt
+  325  cat demo.txt
+  326  git add .
+  327  git commit -m "d1"
+  328  git push origin dev1
+  329  git log --oneline
+  330  echo "d2" >> demo.txt
+  331  git add .
+  332  git commit -m "d2"
+  333  git log --oneline
+  334  mkdir backup
+  335  cd backup/
+  336  ls
+  337  git clone https://github.com/gokulgowda30/Sample1.git
+  338  pwd
+  339  cd Sample1/
+  340  ls
+  341  cat demo.txt
+  342  git checkout dev1
+  343  pwd
+  344  ls
+  345  cat demo.txt
+  346  cd ..
+  347  cd ..
+  348  rm -rf backup/
+  349  ls
+  350  cat demo.txt
+  351  git log --oneline
+  352  git push origin dev1
+  353  git log --oneline
+  354  git reset --hard HEAD~1
+  355  git log --oneline
+  356  echo "d2" >> demo.txt
+  357  cat demo.txt
+  358  git add .
+  359  git commit -m "d2"
+  360  echo "d3" >> demo.txt
+  361  cat demo.txt
+  362  git add .
+  363  git commit -m "d3"
+  364  git log --oneline
+  365  cat demo.txt
+  366  git reset --soft HEAD~1
+  367  git log --oneline
+  368  cat demo.txt
+  369  git reset --hard HEAD~1
+  370  ls
+  371  cat demo.txt
+  372  echo "d2" >> demo.txt
+  373  git add .
+  374  git commit -m "d2"
+  375  echo "d3" >> demo.txt
+  376  git add .
+  377  git commit -m "d3"
+  378  cat demo.txt
+  379  git revert dev1
+  380  git log --oneline
+  381  cat demo.txt
+  382  echo "d4" >> demo.txt
+  383  git add .
+  384  git commit -m "d4"
+  385  echo "d5" >> demo.txt
+  386  git add .
+  387  git status
+  388  git reset demo.txt
+  389  cat demo.txt
+  390  git checkout demo.txt
+  391  cat demo.txt
+  392  git switch master
+  393  git log --oneline
+  394  git switch master
+  395  git switch dev1
+  396  git log --oneline
+  397  git reset --hard HEAD~1
+  398  git log --oneline
+  399  pwd
+  400  git init
+  401  echo "m1" > sample.txt
+  402  cat sample.txt
+  403  git status
+  404  git add .
+  405  git status
+  406  git commit -m "m1"
+  407  echo "m2" >> sample.txt
+  408  cat sample.txt
+  409  git add .
+  410  git commit -m "m2"
+  411  echo "m3" >> sample.txt
+  412  git add .
+  413  git commit -m "m3"
+  414  cat sample.txt
+  415  echo "m4" >> sample.txt
+  416  git add .
+  417  git commit -m "m4"
+  418  cat sample.txt
+  419  git checkout -b dev
+  420  echo "d1" >> sample.txt
+  421  cat sample.txt
+  422  git add .
+  423  git commit -m "d1"
+  424  echo "d2" >> sample.txt
+  425  cat sample.txt
+  426  git add .
+  427  git commit -m "d2"
+  428  git log --oneline
+  429  git switch master
+  430  git switch dev
+  431  git log --oneline
+  432  git diff dev master
+  433  git diff master dev
+  434  git switch master
+  435  git merge dev
+  436  cat sample.txt
+  437  git log --oneline
+  438  git reset --hard HEAD~5
+  439  git log --oneline
+  440  cat sample.txt
+  441  git remote -v
+  442  git remote add origin https://github.com/gokulgowda30/Repo1.git
+  443  git remote -v
+  444  git push origin master
+  445  git log --oneline
+  446  git tag v1.1
+  447  git log --oneline
+  448  echo "m2" >> sample.txt
+  449  git add .
+  450  git commit -m "m2"
+  451  echo "m3" >> sample.txt
+  452  git add .
+  453  git commit -m "m3"
+  454  cat sample.txt
+  455  git log --oneline
+  456  git tag v1.3 444a8b6
+  457  git log --oneline
+  458  git diff origin/master master
+  459  git push origin v1.1
+  460  git tag --help
+  461  git push origin --tag
+  462  ls
+  463  echo "username & password" > credential.conf
+  464  cat credential.conf
+  465  ls
+  466  echo "m4" >> sample.txt
+  467  ls
+  468  echo "url" > jsp.conf
+  469  git add .
+  470   git status
+  471  git reset jsp.conf
+  472  git reset credential.conf
+  473   git status
+  474  touch a.js b.js c.js
+  475  ls
+  476  vi .gitignore
+  477  ls
+  478  ls -a
+  479  git add.
+  480  git add .
+  481  git status
+  482  git commit -m "s"
+  483  echo "homepage" >> a.js
+  484  cat a.js
+  485  echo "about" >> b.js
+  486  cat b.js
+  487  echo "contact" >> c.js
+  488  cat c.js
+  489  ls
+  490  git add .
+  491  git status
+  492  git commit -m "testing"
+  493  vi .gitignore
+  494  git status
+  495  echo "color" >> a.js
+  496  cat a.js
+  497  git status
+  498  history
+  499  git pull origin master
+  500  ls
+
